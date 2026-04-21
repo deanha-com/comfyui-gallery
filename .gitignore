@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+venv/
+env/
+env.bak/
+
+# Node
+node_modules/
+frontend/node_modules/
+
+# Vite
+frontend/.vite/
+frontend/dist/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ENV / secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Credentials / API keys
+api-keys.json
+credentials.json
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Metadata sidecar tags (optional: uncomment to version)
+# *.tags.txt
+
+# Thumbnails
+*.thumb.*
+thumbnails/
+thumb/

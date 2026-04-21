@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    @apply border-[#2a4060];
+  }
+
+  body {
+    @apply bg-[#1a1a2e] text-gray-200;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+@layer components {
+  .gallery {
+    columns: 1;
+    gap: 16px;
+  }
+
+  @media (min-width: 640px) {
+    .gallery {
+      columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .gallery {
+      columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .gallery {
+      columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  .gallery-card {
+    break-inside: avoid;
+    margin-bottom: 16px;
+  }
+
+  .tag-chip {
+    @apply cursor-pointer rounded-full px-2 py-0.5 text-xs font-medium transition-colors duration-200;
+  }
+}
+
+@layer utilities {
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
